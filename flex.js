@@ -17,8 +17,6 @@ client.on('message', msg => {
           const member_map = {};
           messages.map(m => {
             var author = m.author.toString();
-            console.log(author);
-            console.log(m.toString())
             if (author == bot_id) return;
             if (!(author in member_map)) {
               member_map[author] = 0;
